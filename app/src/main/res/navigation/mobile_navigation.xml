@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_item_1">
+
+    <fragment
+        android:id="@+id/navigation_item_1"
+        android:name="com.example.myapplication.Level1Fragment"
+        tools:layout="@layout/fragment_level1" />
+
+    <fragment
+        android:id="@+id/navigation_item_2"
+        android:name="com.example.myapplication.RefortFragment"
+        tools:layout="@layout/fragment_report" />
+
+    <fragment
+        android:id="@+id/navigation_item_3"
+        android:name="com.example.myapplication.SelectFragment"
+        tools:layout="@layout/fragment_select" />
+
+    <fragment
+        android:id="@+id/nav_sub_menu_item1"
+        android:name="com.example.myapplication.AlramFragment"
+        tools:layout="@layout/fragment_alram" />
+
+    <fragment
+        android:id="@+id/nav_sub_menu_item2"
+        android:name="com.example.myapplication.LanguageFragment"
+        tools:layout="@layout/fragment_language" />
+
+    <fragment
+        android:id="@+id/nav_sub_menu_item3"
+        android:name="com.example.myapplication.PreferenceFragment"
+        tools:layout="@xml/setting_preference" />
+    <fragment
+        android:id="@+id/nav_sub_menu_item4"
+        android:name="com.example.myapplication.ResetFragment"
+        tools:layout="@layout/fragment_reset" />
+</navigation>

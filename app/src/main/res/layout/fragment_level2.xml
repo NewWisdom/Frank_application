@@ -1,0 +1,480 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#ffffff">
+
+        <ScrollView
+            android:id="@+id/levelScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/level1_head"
+                        android:layout_width="match_parent"
+                        android:layout_height="230dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/level2" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/level1_head"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="10dp"
+                        android:text="중급"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20dp" />
+
+                    <ImageButton
+                        android:id="@+id/level2_rightbtn"
+                        android:onClick="onClick"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_alignRight="@+id/level1_head"
+                        android:layout_alignBottom="@+id/level1_head"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="#00ff0000"
+                        android:src="@drawable/rightbutton" />
+                    <ImageButton
+                        android:id="@+id/level2_leftbtn"
+                        android:onClick="onClick"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_alignLeft="@+id/level1_head"
+                        android:layout_alignBottom="@+id/level1_head"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="#00ff0000"
+                        android:src="@drawable/leftbutton" />
+
+                </RelativeLayout>
+
+                <ProgressBar
+                    android:id="@+id/progressBar1"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:max="100" />
+
+                <TextView
+                    android:id="@+id/percent1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="10dp"
+                    android:text="%"
+                    android:textSize="15dp" />
+
+                <Button
+                    android:id="@+id/level2_btn1"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_marginVertical="3dp"
+                    android:background="@drawable/round_btn"
+                    android:drawableRight="@drawable/yet"
+                    android:gravity="left|center_vertical"
+                    android:paddingLeft="35dp"
+                    android:paddingRight="30dp"
+                    android:text="1일째"
+                    android:textSize="20dp" />
+
+                <Button
+                    android:id="@+id/level2_btn2"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_marginVertical="3dp"
+                    android:background="@drawable/round_btn"
+                    android:drawableRight="@drawable/yet"
+                    android:gravity="left|center_vertical"
+                    android:paddingLeft="35dp"
+                    android:paddingRight="30dp"
+                    android:text="2일째"
+                    android:textSize="20dp" />
+
+                <Button
+                    android:id="@+id/level2_btn3"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_marginVertical="3dp"
+                    android:background="@drawable/round_btn"
+                    android:drawableRight="@drawable/yet"
+                    android:gravity="left|center_vertical"
+                    android:paddingLeft="35dp"
+                    android:paddingRight="30dp"
+                    android:text="3일째"
+                    android:textSize="20dp" />
+
+                <Button
+                    android:id="@+id/level2_btn4"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_marginVertical="3dp"
+                    android:background="@drawable/round_btn"
+                    android:drawableRight="@drawable/yet"
+                    android:gravity="left|center_vertical"
+                    android:paddingLeft="35dp"
+                    android:paddingRight="30dp"
+                    android:text="4일째"
+                    android:textSize="20dp" />
+
+                <Button
+                    android:id="@+id/level2_btn5"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_marginVertical="3dp"
+                    android:background="@drawable/round_btn"
+                    android:drawableRight="@drawable/yet"
+                    android:gravity="left|center_vertical"
+                    android:paddingLeft="35dp"
+                    android:paddingRight="30dp"
+                    android:text="5일째"
+                    android:textSize="20dp" />
+
+                <Button
+                    android:id="@+id/level2_btn6"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_marginVertical="3dp"
+                    android:background="@drawable/round_btn"
+                    android:drawableRight="@drawable/yet"
+                    android:gravity="left|center_vertical"
+                    android:paddingLeft="35dp"
+                    android:paddingRight="30dp"
+                    android:text="6일째"
+                    android:textSize="20dp" />
+
+                <Button
+                    android:id="@+id/level2_btn7"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_marginVertical="3dp"
+                    android:background="@drawable/round_btn"
+                    android:drawableRight="@drawable/yet"
+                    android:gravity="left|center_vertical"
+                    android:paddingLeft="35dp"
+                    android:paddingRight="30dp"
+                    android:text="7일째"
+                    android:textSize="20dp" />
+
+                <Button
+                    android:id="@+id/level2_btn8"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_marginVertical="3dp"
+                    android:background="@drawable/round_btn"
+                    android:drawableRight="@drawable/yet"
+                    android:gravity="left|center_vertical"
+                    android:paddingLeft="35dp"
+                    android:paddingRight="30dp"
+                    android:text="8일째"
+                    android:textSize="20dp" />
+
+                <Button
+                    android:id="@+id/level2_btn9"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_marginVertical="3dp"
+                    android:background="@drawable/round_btn"
+                    android:drawableRight="@drawable/yet"
+                    android:gravity="left|center_vertical"
+                    android:paddingLeft="35dp"
+                    android:paddingRight="30dp"
+                    android:text="9일째"
+                    android:textSize="20dp" />
+
+                <Button
+                    android:id="@+id/level2_btn10"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_marginVertical="3dp"
+                    android:background="@drawable/round_btn"
+                    android:text="10일째"
+                    android:drawableRight="@drawable/yet"
+                    android:paddingRight="30dp"
+                    android:gravity="left|center_vertical"
+                    android:paddingLeft="35dp"
+                    android:textSize="20dp"/>
+
+                <Button
+                    android:id="@+id/level1_btn11"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_marginVertical="3dp"
+                    android:background="@drawable/round_btn"
+                    android:text="11일째"
+                    android:drawableRight="@drawable/yet"
+                    android:paddingRight="30dp"
+                    android:gravity="left|center_vertical"
+                    android:paddingLeft="35dp"
+                    android:textSize="20dp"/>
+
+                <Button
+                    android:id="@+id/level2_btn12"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_marginVertical="3dp"
+                    android:background="@drawable/round_btn"
+                    android:text="12일째"
+                    android:drawableRight="@drawable/yet"
+                    android:paddingRight="30dp"
+                    android:gravity="left|center_vertical"
+                    android:paddingLeft="35dp"
+                    android:textSize="20dp"/>
+
+                <Button
+                    android:id="@+id/level2_btn13"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_marginVertical="3dp"
+                    android:background="@drawable/round_btn"
+                    android:text="13일째"
+                    android:drawableRight="@drawable/yet"
+                    android:paddingRight="30dp"
+                    android:gravity="left|center_vertical"
+                    android:paddingLeft="35dp"
+                    android:textSize="20dp"/>
+
+                <Button
+                    android:id="@+id/level2_btn14"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_marginVertical="3dp"
+                    android:background="@drawable/round_btn"
+                    android:text="14일째"
+                    android:drawableRight="@drawable/yet"
+                    android:paddingRight="30dp"
+                    android:gravity="left|center_vertical"
+                    android:paddingLeft="35dp"
+                    android:textSize="20dp"/>
+
+                <Button
+                    android:id="@+id/level2_btn15"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_marginVertical="3dp"
+                    android:background="@drawable/round_btn"
+                    android:text="15일째"
+                    android:drawableRight="@drawable/yet"
+                    android:paddingRight="30dp"
+                    android:gravity="left|center_vertical"
+                    android:paddingLeft="35dp"
+                    android:textSize="20dp"/>
+
+                <Button
+                    android:id="@+id/level2_btn16"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_marginVertical="3dp"
+                    android:background="@drawable/round_btn"
+                    android:text="16일째"
+                    android:drawableRight="@drawable/yet"
+                    android:paddingRight="30dp"
+                    android:gravity="left|center_vertical"
+                    android:paddingLeft="35dp"
+                    android:textSize="20dp"/>
+
+                <Button
+                    android:id="@+id/level2_btn17"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_marginVertical="3dp"
+                    android:background="@drawable/round_btn"
+                    android:text="17일째"
+                    android:drawableRight="@drawable/yet"
+                    android:paddingRight="30dp"
+                    android:gravity="left|center_vertical"
+                    android:paddingLeft="35dp"
+                    android:textSize="20dp"/>
+
+                <Button
+                    android:id="@+id/level2_btn18"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_marginVertical="3dp"
+                    android:background="@drawable/round_btn"
+                    android:text="18일째"
+                    android:drawableRight="@drawable/yet"
+                    android:paddingRight="30dp"
+                    android:gravity="left|center_vertical"
+                    android:paddingLeft="35dp"
+                    android:textSize="20dp"/>
+
+                <Button
+                    android:id="@+id/level2_btn19"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_marginVertical="3dp"
+                    android:background="@drawable/round_btn"
+                    android:text="19일째"
+                    android:drawableRight="@drawable/yet"
+                    android:paddingRight="30dp"
+                    android:gravity="left|center_vertical"
+                    android:paddingLeft="35dp"
+                    android:textSize="20dp"/>
+
+                <Button
+                    android:id="@+id/level2_btn20"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_marginVertical="3dp"
+                    android:background="@drawable/round_btn"
+                    android:text="20일째"
+                    android:drawableRight="@drawable/yet"
+                    android:paddingRight="30dp"
+                    android:gravity="left|center_vertical"
+                    android:paddingLeft="35dp"
+                    android:textSize="20dp"/>
+
+                <Button
+                    android:id="@+id/level2_btn21"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_marginVertical="3dp"
+                    android:background="@drawable/round_btn"
+                    android:text="21일째"
+                    android:drawableRight="@drawable/yet"
+                    android:paddingRight="30dp"
+                    android:gravity="left|center_vertical"
+                    android:paddingLeft="35dp"
+                    android:textSize="20dp"/>
+
+                <Button
+                    android:id="@+id/level2_btn22"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_marginVertical="3dp"
+                    android:background="@drawable/round_btn"
+                    android:text="22일째"
+                    android:drawableRight="@drawable/yet"
+                    android:paddingRight="30dp"
+                    android:gravity="left|center_vertical"
+                    android:paddingLeft="35dp"
+                    android:textSize="20dp"/>
+
+                <Button
+                    android:id="@+id/level2_btn23"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_marginVertical="3dp"
+                    android:background="@drawable/round_btn"
+                    android:text="23일째"
+                    android:drawableRight="@drawable/yet"
+                    android:paddingRight="30dp"
+                    android:gravity="left|center_vertical"
+                    android:paddingLeft="35dp"
+                    android:textSize="20dp"/>
+
+                <Button
+                    android:id="@+id/level2_btn24"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_marginVertical="3dp"
+                    android:background="@drawable/round_btn"
+                    android:text="24일째"
+                    android:drawableRight="@drawable/yet"
+                    android:paddingRight="30dp"
+                    android:gravity="left|center_vertical"
+                    android:paddingLeft="35dp"
+                    android:textSize="20dp"/>
+
+                <Button
+                    android:id="@+id/level2_btn25"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_marginVertical="3dp"
+                    android:background="@drawable/round_btn"
+                    android:text="25일째"
+                    android:drawableRight="@drawable/yet"
+                    android:paddingRight="30dp"
+                    android:gravity="left|center_vertical"
+                    android:paddingLeft="35dp"
+                    android:textSize="20dp"/>
+
+                <Button
+                    android:id="@+id/level2_btn26"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_marginVertical="3dp"
+                    android:background="@drawable/round_btn"
+                    android:text="26일째"
+                    android:drawableRight="@drawable/yet"
+                    android:paddingRight="30dp"
+                    android:gravity="left|center_vertical"
+                    android:paddingLeft="35dp"
+                    android:textSize="20dp"/>
+
+                <Button
+                    android:id="@+id/level2_btn27"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_marginVertical="3dp"
+                    android:background="@drawable/round_btn"
+                    android:text="27일째"
+                    android:drawableRight="@drawable/yet"
+                    android:paddingRight="30dp"
+                    android:gravity="left|center_vertical"
+                    android:paddingLeft="35dp"
+                    android:textSize="20dp"/>
+
+                <Button
+                    android:id="@+id/level2_btn28"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_marginVertical="3dp"
+                    android:background="@drawable/round_btn"
+                    android:text="28일째"
+                    android:drawableRight="@drawable/yet"
+                    android:paddingRight="30dp"
+                    android:gravity="left|center_vertical"
+                    android:paddingLeft="35dp"
+                    android:textSize="20dp"/>
+
+                <Button
+                    android:id="@+id/level2_btn29"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_marginVertical="3dp"
+                    android:background="@drawable/round_btn"
+                    android:text="29일째"
+                    android:drawableRight="@drawable/yet"
+                    android:paddingRight="30dp"
+                    android:gravity="left|center_vertical"
+                    android:paddingLeft="35dp"
+                    android:textSize="20dp"/>
+
+                <Button
+                    android:id="@+id/level2_btn30"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_marginVertical="3dp"
+                    android:background="@drawable/round_btn"
+                    android:text="30일째"
+                    android:drawableRight="@drawable/yet"
+                    android:paddingRight="30dp"
+                    android:gravity="left|center_vertical"
+                    android:paddingLeft="35dp"
+                    android:textSize="20dp"/>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

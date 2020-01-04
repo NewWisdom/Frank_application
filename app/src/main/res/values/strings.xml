@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">플랭크</string>
+    <string name="플랭크">플랭크</string>
+    <string name="drawer_header_text"> 플랭크 운동</string>
+    <string name="navigation_item_1">운동계획</string>
+    <string name="navigation_item_2">보고서</string>
+    <string name="navigation_item_3">계획 선택</string>
+    <string name="nav_sub_menu_item1">알림</string>
+    <string name="nav_sub_menu_item2">언어 선택</string>
+    <string name="nav_sub_menu_item3">설정</string>
+    <string name="nav_sub_menu_item4">진행재설정</string>
+    <string name="spc"> </string>
+    <string name="action_settings">Settings</string>
+
+</resources>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="language">
+        <item>한국어</item>
+        <item>English</item>
+    </string-array>
+    <string-array name="language_value">
+        <item>ko</item>
+        <item>en</item>
+    </string-array>
+    <array name="level1_1">
+        <item>@drawable/level1_1_1</item>
+        <item>@drawable/level1_1_2</item>
+        <item>@drawable/level1_1_3</item>
+        <item>@drawable/level1_1_4</item>
+        <item>@drawable/level1_1_5</item>
+        <item>@drawable/level1_1_6</item>
+    </array>
+</resources>

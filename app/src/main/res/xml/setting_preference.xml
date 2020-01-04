@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="운동" >
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="sound"
+            android:switchTextOff="OFF"
+            android:switchTextOn="ON"
+            android:title="무음" />
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="sound"
+            android:switchTextOff="OFF"
+            android:switchTextOn="ON"
+            android:title="가이드 목소리" />
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="sound"
+            android:switchTextOff="OFF"
+            android:switchTextOn="ON"
+            android:title="코치팁" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="알림 설정" >
+
+        <Preference
+            android:title="건강정보">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="http://www.naver.com"/>
+        </Preference>
+        <Preference
+            android:title="매일 운동 시간 알림">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="http://www.naver.com"/>
+        </Preference>
+        <Preference
+            android:title="미터법,영국식 단위">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="http://www.naver.com"/>
+        </Preference>
+        <ListPreference
+            android:title="언어"
+            android:summary="시스템의 기본"
+            android:key="language"
+            android:defaultValue="ko"
+            android:entries="@array/language"
+            android:entryValues="@array/language_value"
+            android:negativeButtonText="@null"
+            android:positiveButtonText="@null"/>
+        <Preference
+            android:title="모든 데이터 지우기">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="http://www.naver.com"/>
+        </Preference>
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="고객 지원">
+        <Preference
+            android:title="평가하기">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="http://www.naver.com"/>
+        </Preference>
+    </PreferenceCategory>
+</PreferenceScreen>
